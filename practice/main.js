@@ -213,6 +213,10 @@ const listArr = {
     starterIndex, mainIndex, address, time
   }){
     console.log(`Order received! ${this.starterMenu[starterIndex]}, staff name: ${this.menuServers[mainIndex]}, will be delivered to ${address} at around ${time}`);
+  },
+
+  spreadD: function(ing1, ing2, ing3) {
+    console.log(`Your order is ${ing1}, ${ing2} and ${ing3}`);
   }
 };
 
@@ -245,3 +249,26 @@ console.log(a, b);
 const nested = [2, 4, [5, 6]]
 const [x, , [j, k]] = nested;
 console.log(x, j, k);
+
+
+const restO = 'Joel';
+const opRest = [...restO,];
+console.log(opRest)
+const anotherArr = [...listArr.starterMenu, ...listArr.menuServers];
+console.log(anotherArr);
+
+// const promptP = [
+//   prompt('ingredient 1?'),
+//   prompt('ingredient 2?'),
+//   prompt('ingredient 3?')
+// ]
+// listArr.spreadD(...promptP)
+
+const newCopy = {...listArr, established: 1998}
+console.log(newCopy);
+
+const oldCopy = { ...listArr };
+oldCopy.name = 'new name innit!'
+console.log(oldCopy.name);
+console.log(listArr.name);
+
