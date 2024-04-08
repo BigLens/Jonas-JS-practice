@@ -205,12 +205,12 @@ const listArr = {
   starterMenu: ['rice', 'beans', 'vegetables', 'orange', 'ati bee bee lo😂'],
   menuServers: ['Paul', 'Jonas', 'Joel', 'Adedeji', 'Jacob', 'pelu awon miran'],
 
-  orderMenu: function (starterIndex, mainIndex) {
+  orderMenu: function (mainIndex, starterIndex) {
     return [this.starterMenu[starterIndex], this.menuServers[mainIndex]]
   },
   
   order: function ({
-    starterIndex, mainIndex, address, time
+    mainIndex, starterIndex, address, time
   }){
     console.log(`Order received! ${this.starterMenu[starterIndex]}, staff name: ${this.menuServers[mainIndex]}, will be delivered to ${address} at around ${time}`);
   },
