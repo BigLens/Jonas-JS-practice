@@ -272,3 +272,22 @@ oldCopy.name = 'new name innit!'
 console.log(oldCopy.name);
 console.log(listArr.name);
 
+//REST OPERATOR
+
+const [p, c, ...others] = [1, 2, 3, 4, 5, 6];
+console.log(p, c, others);
+
+const [starttMenu, , menuS, ...othersMenus] = [...listArr.starterMenu, ...listArr.menuServers]
+console.log(starttMenu, menuS, othersMenus);
+
+const add = function(...numbers) {
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) sum += numbers[i]
+  console.log(sum);
+}
+
+add(2, 5);
+add(5, 6, 9, 2);
+add(7, 8, 5);
+
+
