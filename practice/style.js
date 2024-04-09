@@ -19,24 +19,26 @@ console.log(primary, secondary);
 
 const newArr = {
     categories: ['fish', 'meat', 'and-co'],
-    servers: ['me', 'you', 'us', 'them'],
+    servers: ['me', 'you', 'us', 'Shean'],
 
-    order: function (mainIndex, starterIndex) {
-        return [this.categories[mainIndex]], [this.servers[starterIndex]]
-    },
+  order: function(starterIndex, mainIndex) {
+    return [this.categories[starterIndex]], [this.servers[mainIndex]]
+  },
 
-    mainOrder: function ({mainIndex, starterIndex, time, address}) {
-        console.log(`Your order is received! you ordered for ${this.categories[starterIndexIndex]}, the staff to deliver your order is ${this.servers[mainIndex]} to ${address} at around ${time}`);
-    }
+  mainOrder: function ({
+    starterIndex, mainIndex, date, time, address
+  }) {
+    console.log(`Order received! You ordered for ${this.categories[starterIndex]}. The staff name to deliver your order is ${this.servers[mainIndex]} to the address: ${address} on ${date} at around ${time}`);
+  }
 };
 
-newArr.order({
-    address: '12, Anikulapo street, Mokola Ibadan',
-    time: '19:00',
-    mainIndex: 1,
-    starterIndex: 1
+newArr.mainOrder({
+    starterIndex: 1,
+    mainIndex: 3,
+    address: '"10, Akinpelu Road, Moniya Ibadan"',
+    date: '24/4/2024',
+    time: '17:00'
 });
-
 
 let [main, , second] = newArr.categories;
 console.log(main, second);
