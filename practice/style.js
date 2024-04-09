@@ -53,6 +53,8 @@ const anotherAr = {a: 10, b: 13}; ({a, b} = anotherAr);
 console.log(a, b);
 
 
+//NULIFY COALITION 
+console.log(5 && 6 && 7 && 8);
 
-
- 
+let guestNum = newArr.guestNum1 || 0;
+console.log(guestNum);
