@@ -60,3 +60,11 @@ console.log(5 && 6 && 7 && 8);
 
 let guestNum = newArr.guestNum1 || 0;
 console.log(guestNum);
+
+
+
+// CODING CHALLENGE!
+
+const Players1 = []
+const Players2 = []
+
