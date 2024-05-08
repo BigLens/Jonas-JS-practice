@@ -63,8 +63,15 @@ console.log(guestNum);
 
 
 
-// CODING CHALLENGE!
+const newName = {
+  materials: ['vegetables', 'apple', 'cum', 'face'],
+  ingredient: ['asyouwant', 'plusminus', 'seminar', 'thentoo'],
+};
 
-const Players1 = []
-const Players2 = []
+const server = [...newName.materials, ...newName.ingredient]
+for (const itemss of server.entries()) console.log(itemss);
+
+for (const [i, el] of server.entries())
+console.log(`${i + 1}: ${el}`);
+
 
